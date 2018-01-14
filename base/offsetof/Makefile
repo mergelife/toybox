@@ -5,7 +5,7 @@ CFLAGS = -g -Wall
 all: test_offsetof
 
 test_offsetof: offsetof.o
-	$(CC) -o test_offsetof offsetof.o $(LDFLAGS)
+	$(CC) -static -o test_offsetof offsetof.o $(LDFLAGS)
 
 
 clean:
